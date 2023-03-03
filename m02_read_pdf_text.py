@@ -13,7 +13,7 @@ def get_pdf_text(document_path, start_page=1, final_page=999):
         page += '\n\npage#' + str(page_num + 2) + ' \n' if page_num < final_page - 1 else ''
     return page
 
-# comment change only
+
 if __name__ == '__main__':
     doc_path_name = 'documents/chat_gpt_ubs.pdf'
     doc_text = get_pdf_text(doc_path_name, 1, 2)
